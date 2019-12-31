@@ -1,0 +1,177 @@
+/* You can add global styles to this file, and also import other style files */
+/* 00074b */
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/* Rules for sizing the icon. */
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.md-56 {
+    font-size: 56px;
+}
+
+
+/* Rules for using icons as black on a light background. */
+
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+
+/* Rules for using icons as white on a dark background. */
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.material-icons.md-mt {
+    /* color: #ff5722; */
+    background-image: linear-gradient(#00BCD4, #00074b);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.mtboldfont {
+    font-weight: bold;
+    color: #00074b;
+}
+
+.page-footer {
+    /* background-color: #ff5722; */
+    background-image: linear-gradient(#00074b, #00BCD4);
+}
+
+.fabmtbutton {
+    background-image: linear-gradient(#00BCD4, #00074b);
+}
+
+body::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 3px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background-color: #AAA;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .2) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, .2) 50%, rgba(0, 0, 0, .2) 75%, transparent 75%, transparent)
+}
+
+.carousel-mt .indicators .indicator-item.active {
+    background-color: #00074b !important;
+}
+
+.carousel-mt .indicators .indicator-item {
+    background-color: #00074b8f !important;
+}
+
+
+/* csssssss */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.mtnav {
+    background-color: transparent;
+    box-shadow: none;
+    transition: background-color 0.5s linear;
+}
+
+
+/* .mtnav a {
+    color: #000;
+} */
+
+.mtnavbk {
+    background-color: #00074b;
+    transition: background-color 0.5s linear;
+}
+
+.navbar-fixed {
+    height: 0 !important;
+}
+
+
+/* nav .brand-logo {
+    padding: 0 20px;
+    padding: 10px;
+} */
+
+@media only screen and (max-width: 992px) {
+    nav .brand-logo {
+        left: 0;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.mt-mrtop-0 {
+    margin-top: 0;
+}
+
+.sidenav li>a {
+    color: #ff5722;
+}
+
+.mtpopin {
+    animation: pulse 1s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.2);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+#particle-canvas {
+    width: 100%;
+    height: 100%;
+}
