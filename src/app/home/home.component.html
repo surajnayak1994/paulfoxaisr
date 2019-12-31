@@ -1,8 +1,11 @@
-<h4>Paul Foxaisr Git Commit History</h4>
+<div class="container">
+    <h4>Paul Foxaisr Git Commit History</h4>
 
-<ul>
-    <li>Commit 1</li>
-    <li>Commit 2</li>
-    <li>Commit 3</li>
-    <li>Commit 4</li>
-</ul>
+    <ul class="collection" *ngFor="let commit of mycommit">
+        <li class="collection-item">
+            {{commit.commit.message}}
+            <br>
+            <small>{{commit.commit.committer.name}} committed on {{commit.commit.committer.date}}</small>
+        </li>
+    </ul>
+</div>
